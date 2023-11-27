@@ -9,15 +9,16 @@ import Navbar from './scenes/global/Navbar';
 import CartMenu from './scenes/global/CartMenu';
 import Footer from './scenes/global/Footer.jsx';
 
+// Composant ScrollToTop pour remonter en haut de la page lors de la navigation
 const ScrollToTop = () => {
+  // Obtention de l'emplacement actuel
   const { pathname } = useLocation();
 
-
+  // Effet de scroll vers le haut de la page lorsque le chemin de l'URL change
   useEffect(() => {
-
     window.scrollTo(0, 0);
-
   }, [pathname]);
+
   return null;
 }
 
